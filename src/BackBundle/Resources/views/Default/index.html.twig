@@ -1,0 +1,13 @@
+{% extends "::base.html.twig" %}
+{%  block title %} Test Ivory {%  endblock %}
+
+
+{%  block body %}
+    <div id="map_canvas" style="width:1920px;height:600px">
+        {{ ivory_google_map(map) }}
+        {{ ivory_google_map_container(map) }}
+        {{ ivory_google_map_js(map) }}
+        {{ ivory_google_map_css(map) }}
+        {{ ivory_google_api([map]) }}
+    </div>
+{%  endblock %}
